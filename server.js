@@ -1,13 +1,16 @@
 const express = require('express');
 const db = require('./db')
+require('dotenv').config();
+
 const Person = require('./models/Person');
 const Menu = require('./models/Menu');
+
 const bodyParser = require('body-parser');
 const { default: mongoose } = require('mongoose');
 
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 
