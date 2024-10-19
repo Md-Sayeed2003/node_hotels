@@ -3,10 +3,10 @@ require('dotenv').config();
 
 //define mongoDB connection url
 
-// const mongoURL = process.env.LOCAL_DB_URL;   // mongodb local url 
+const mongoURL = process.env.LOCAL_DB_URL;   // mongodb local url 
  
 
-const mongoURL = process.env.DB_URL ;  // mongodb online url using atlas
+// const mongoURL = process.env.DB_URL ;  // mongodb online url using atlas
 
 mongoose.connect(mongoURL);
 //Get the default connection
